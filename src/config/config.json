@@ -1,23 +1,9 @@
 {
-  "development": {
-    "username": "root",
-    "password": "Mac@local12345",
-    "database": "REMINDER_DB_DEV",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
+    "development": {
+        "username": "root",
+        "password": "PRADEEP#754@ankit",
+        "database": "Flights_Search_DB_DEV",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
 }

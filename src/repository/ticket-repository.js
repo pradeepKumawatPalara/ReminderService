@@ -2,7 +2,7 @@ const { NotificationTicket } = require('../models/index');
 const { Op } = require("sequelize");
 
 class TicketRepository {
-    
+
     async getAll() {
         try {
             const tickets = await NotificationTicket.findAll();
@@ -14,6 +14,7 @@ class TicketRepository {
 
     async create(data) {
         try {
+
             const ticket = await NotificationTicket.create(data);
             return ticket;
         } catch (error) {
@@ -40,7 +41,7 @@ class TicketRepository {
     async update(ticketId, data) {
         try {
             const ticket = await NotificationTicket.findByPk(ticketId);
-            if(data.status)
+            if (data.status)
                 ticket.status = data.status;
             await ticket.save();
             return ticket;
